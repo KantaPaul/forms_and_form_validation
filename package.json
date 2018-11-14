@@ -1,0 +1,62 @@
+{
+  "name": "quick-start-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^17.1.1",
+    "react-dom": "^16.3.2",
+    "react-modal": "^3.4.4",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "sass-loader": "^7.0.1",
+    "uuid": "^3.3.2",
+    "validator": "^10.1.0",
+    "webpack": "^3.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^2.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "live-server": "^1.2.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.1.1",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "scripts": {
+    "build:dev": "webpack",
+    "build:pord": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:pord"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KantaPaul/project-with-less"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KantaPaul/project-with-less/issues"
+  },
+  "homepage": "https://github.com/KantaPaul/project-with-less#readme"
+}
