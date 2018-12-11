@@ -1,0 +1,29 @@
+.input {
+    width: 100%;
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    background-color: #f7f7ff;
+    &.invaild {
+        border-color: lighten($color: red, $amount: 15);
+        background-color: lighten($color: red, $amount: 45);
+    }
+    &:focus {
+        outline: none
+    }
+}
+.label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.input-wraper {
+    margin-bottom: 15px;
+}
+textarea.input {
+    height: 100px;
+    resize: none;
+}
